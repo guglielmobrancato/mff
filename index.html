@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Opening Animation -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="./intro-logo.png" alt="Marte Studios" class="loader-logo">
+      <p class="loader-text">presenta</p>
+    </div>
+  </div>
+
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo-container">
+        <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="next.html">Next</a></li>
+        <li><a href="legends.html">Last Editions</a></li>
+        <li><a href="partner.html">Partner</a></li>
+        <li><a href="chi-siamo.html">Who We Are</a></li>
+        <li><a href="https://velvet.martestudios.com" target="_blank" rel="noopener">Blog</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>II edition</h1>
+        <p>Studi Televisivi Voxson<br>
+          Via di Tor Cervara 286<br>
+          20 - 22 Marzo 2026</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="https://www.ticketsms.it/collection/Marte-Film-Festival-II-Edizione?_gl=1*1j6tlgc*_up*MQ..*_ga*OTUxNDk3MDgzLjE3NzMzNTMyNDM.*_ga_DHM87SVKDD*czE3NzMzNTMyNDIkbzEkZzEkdDE3NzMzNTMyNDYkajU2JGwwJGgxNjk3NTI5NDI4" target="_blank" rel="noopener" class="cta-button">acquista il tuo biglietto</a>
+          <a href="./assets/Programma 2026.pdf" download="Programma_Marte_Film_Festival.pdf" class="cta-button cta-secondary">Scarica il Programma</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="filminconcorso" class="section">
+      <div class="container" style="text-align: center;">
+        <h2 style="margin-bottom: 2rem;">Film in Concorso</h2>
+        <p style="color: var(--text-secondary); max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; line-height: 1.8;">
+          Scopri le opere selezionate per la seconda edizione del Marte Film Festival. 
+          Un viaggio attraverso storie inedite e sguardi visionari.
+        </p>
+        <a href="film-in-concorso.html" class="cta-button" style="background: var(--accent-color);">Esplora la Selezione</a>
+      </div>
+    </section>
+
+    <section id="premio" class="section dark-bg">
+      <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4rem;">
+        <div style="flex: 1; min-width: 300px;">
+          <h2 style="margin-bottom: 2rem; text-align: left;">Il Premio</h2>
+          <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            Il trofeo del Marte Film Festival non è solo un riconoscimento, ma un'opera d'arte unica che unisce 
+            tecnologia spaziale e scultura visionaria.
+          </p>
+          <a href="premio.html" class="cta-button">Scopri l'Opera</a>
+        </div>
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+          <div style="width: 100%; height: 400px; background: rgba(255,255,255,0.02) url('./assets/statua.png') no-repeat center center; background-size: contain; border: 1px solid rgba(192,83,44,0.3); border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+            <div style="position: absolute; width: 200px; height: 200px; background: var(--accent-glow); filter: blur(60px); border-radius: 50%; z-index: 0;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram-section section">
+      <div class="container">
+        <h2 style="margin-bottom: 2rem;">Seguici su Instagram</h2>
+        <p
+          style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Resta aggiornato sulle ultime novità, anteprime esclusive e momenti dietro le quinte del festival.
+        </p>
+
+        <div class="instagram-grid">
+          <a href="https://www.instagram.com/martefilmfestival/" target="_blank" rel="noopener" class="instagram-card">
+            <div class="instagram-icon">📸</div>
+            <h3>Post Recenti</h3>
+            <p>Scopri le ultime foto e video dal nostro feed</p>
+          </a>
+
+          <a href="https://www.instagram.com/martefilmfestival/" target="_blank" rel="noopener"
+            class="instagram-card featured">
+            <div class="instagram-icon">🎬</div>
+            <h3>@martefilmfestival</h3>
+            <p>Seguici per contenuti esclusivi e aggiornamenti in tempo reale</p>
+            <span class="follow-btn">Segui Ora</span>
+          </a>
+
+          <a href="https://www.instagram.com/martefilmfestival/" target="_blank" rel="noopener" class="instagram-card">
+            <div class="instagram-icon">🌟</div>
+            <h3>Stories & Reels</h3>
+            <p>Non perdere i momenti speciali del festival</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">
+          <span>Per ogni domanda: </span>
+          <a href="mailto:mff@martestudios.com" style="color: var(--accent-color);">mff@martestudios.com</a>
+        </p>
+        <div class="socials" style="margin-top: 1.5rem;">
+          <a href="https://www.instagram.com/martefilmfestival/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+Questo è un file placeholder per il PDF della selezione.
+
+Sostituisci questo file con il PDF reale della selezione film.
+
+Il file deve essere chiamato: selezione.pdf
+E deve essere posizionato in: public/selezione.pdf
+
+Quando l'utente cliccherà su "Esplora la Selezione" nella homepage, scaricherà questo PDF con il nome: Marte_Film_Festival_Selezione_2025.pdf

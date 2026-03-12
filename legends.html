@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Last Editions - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .archive-hero {
+      height: 60vh;
+      background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2022&auto=format&fit=crop');
+    }
+
+    .edition-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 4rem;
+      transition: all 0.3s;
+    }
+
+    .edition-card:hover {
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .edition-header {
+      padding: 3rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      background: linear-gradient(to bottom, rgba(192, 83, 44, 0.1), transparent);
+    }
+
+    .edition-header h3 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .winners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+
+    .winner-item {
+      text-align: center;
+    }
+
+    .winner-category {
+      color: var(--accent-color);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .winner-title {
+      font-size: 1.5rem;
+      color: #fff;
+      font-family: var(--font-heading);
+      margin-bottom: 0.5rem;
+    }
+
+    .winner-director {
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 0 3rem 3rem;
+    }
+
+    .gallery-item {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      filter: grayscale(80%);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="next.html">Next</a></li>
+      <li><a href="legends.html">Last Editions</a></li>
+      <li><a href="partner.html">Partner</a></li>
+      <li><a href="chi-siamo.html">Who We Are</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section class="hero-section archive-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Last Editions</h1>
+      <p>I registri delle missioni passate e i pionieri che le hanno guidate.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      
+      <!-- Edizione 2025 -->
+      <div class="edition-card">
+        <div class="edition-header">
+          <h3>Edizione 2025</h3>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">"L'inizio del Viaggio" - I pionieri della nostra prima missione ufficiale.</p>
+        </div>
+        
+        <p style="text-align: center; margin-top: 3rem; font-size: 1.2rem; color: #fff; max-width: 800px; margin-left: auto; margin-right: auto;">
+          L'edizione si è svolta a Marzo 2025 presso le Industrie Fluviali ed il Cinema Madison.
+        </p>
+        <h4 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Galleria Missione</h4>
+        <div class="gallery-grid">
+          <div class="gallery-item" style="background-image: url('assets/foto%202025/DSCF3058.JPEG'); background-color: #222;"></div>
+          <div class="gallery-item" style="background-image: url('assets/foto%202025/DSCF3257.JPG'); background-color: #222;"></div>
+          <div class="gallery-item" style="background-image: url('assets/foto%202025/DSCF3382.jpeg'); background-color: #222;"></div>
+          <div class="gallery-item" style="background-image: url('assets/foto%202025/DSCF3427.JPG'); background-color: #222;"></div>
+          <div class="gallery-item" style="background-image: url('assets/foto%202025/DSCF3567.JPEG'); background-color: #222;"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

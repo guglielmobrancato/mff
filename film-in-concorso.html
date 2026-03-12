@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film in Concorso - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .film-hero {
+      height: 50vh;
+      background-image: url('assets/banner%20sito%20statue.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .film-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+
+    .film-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .film-card:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(192, 83, 44, 0.2);
+    }
+
+    .film-poster {
+      width: 100%;
+      aspect-ratio: 2/3;
+      background-color: #111;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    .film-category-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .film-info {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .film-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .film-director {
+      color: var(--accent-color);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .film-logline {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .film-meta {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="next.html">Next</a></li>
+      <li><a href="legends.html">Last Editions</a></li>
+      <li><a href="partner.html">Partner</a></li>
+      <li><a href="chi-siamo.html">Who We Are</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section class="film-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Film In Concorso</h1>
+      <p>La selezione ufficiale della II Edizione.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="film-grid">
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/82866f954a-poster.webp');">
+             <div class="film-category-badge">DOC LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Romagna Mia</h3>
+            <div class="film-director">Paolo Melandri-Pier Damiano Benghi</div>
+            <p class="film-logline">In May 2023, and again between September and October 2024, the Romagna region was struck by devastating floods that turned familiar landscapes into scenes of destruction. This documentary delves into the human and environmental drama behind these events, linking them to climate change, which is making extreme weather phenomena increasingly frequent and intense.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/logo%20mff%20arancione.png'); background-size: contain; background-repeat: no-repeat;">
+             <div class="film-category-badge">DOC LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">as águas que correm</h3>
+            <div class="film-director">Julien Heurtier-ronaldo neves</div>
+            <p class="film-logline">Between social criticism and urban poem, the film follows the waters of Rio de Janeiro, these waters that flow, these bodies that sweat, and these life journeys of Afro-Brazilian artists who militate for a fairer society.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/473bb9a4e9-poster.jpg');">
+             <div class="film-category-badge">DOC LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Cento - Assalto al moro</h3>
+            <div class="film-director">Matteo De Liberato</div>
+            <p class="film-logline">The seventieth anniversary of the Giostra della Quintana in Ascoli Piceno is told through a documentary that will gather the voices of an entire city. Because the Quintana is not just a Palio, it is the constant and obsessive thought of an entire year, it is the commitment of a whole community, it is the dream of victory</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/693ed14d5c-poster.jpg');">
+             <div class="film-category-badge">DOC LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">L'ombra del Gigante</h3>
+            <div class="film-director">Bellavia Alberto</div>
+            <p class="film-logline">A giant called "Ferrania"
+A manufacturing and social excellence, which made thousands of people's dream of a bright future come true...
+But now, on that huge path, the only thing that is left is a shadow.
+Yesterday , Ferrania was the future
+Today is it legend</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/d9e3688afc-poster.webp');">
+             <div class="film-category-badge">DOC LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">NADO</h3>
+            <div class="film-director">Daniele Farina</div>
+            <p class="film-logline">NADO is an intimate and powerful journey through the life and work of
+one of the greatest Italian sculptors of the twentieth century. A
+story of resistance and courage, a human parable of
+will and joy that spans a whole century.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/323f23eb45-poster.jpg');">
+             <div class="film-category-badge">LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Un Giorno D'estate</h3>
+            <div class="film-director">Gaetano Di Lorenzo</div>
+            <p class="film-logline">Tutto accadde in un pomeriggio d’estate. Maria e i suoi figli, ritornatati dal mare, si scontrano con Michele marito e padre violento. La lite porterà a un tragico scontro tra Michele e il padre di Maria, che indurrà la donna a rifugiarsi in un'altra città, finché non scoprirà una nuova verità</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/f87cc341bd-poster.jpg');">
+             <div class="film-category-badge">LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">About My Mom</h3>
+            <div class="film-director">Soner Sert</div>
+            <p class="film-logline">Caner, who went to Germany to study at university, returns to Türkiye to attend the fifth anniversary commemoration of his mother's death, and is greeted at the airport by his father Muharrem, whom he has not seen for a long time. Caner, who is going to set off on a long journey to the countryside of Türkiye to attend the commemoration where all the relatives will gather and perform religious rituals with his father, whom he sees as responsible for his mother's death, enters into a fierce struggle with his father on this journey. In this journey, where the sociopolitical environment of the country forms the background, things will get even more complicated when Caner's mother gets involved between the father and son on a dark night.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/a separeation.jpg');">
+             <div class="film-category-badge">LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">A Seperation</h3>
+            <div class="film-director">Xin Mou</div>
+            <p class="film-logline">Fresh from a failed marriage, Qin Lang returns to his hometown, Jinji Town, to bury his father.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/fc6fa56607-poster.jpg');">
+             <div class="film-category-badge">LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Three Infallible Rules</h3>
+            <div class="film-director">Marco Gianfreda</div>
+            <p class="film-logline">Fourteen year-old Bruno is in a state of panic: he finds out his love for Flavia is requited, but has no idea how to start a relationship. He needs someone to teach him the ropes, and it just so happens that his best bet is the much detested Luca, the only man capable of making his hopeless mother Claudia fall in love again. Bruno must swallow his pride and accept his worst enemy’s advice. Little does he know that Luca and Claudia’s relationship is shaky, undermined, and anything but exemplary</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/3fedfa38e7-poster.jpg');">
+             <div class="film-category-badge">LUNGHI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Freedom</h3>
+            <div class="film-director">Evgeniy Lavrentyev</div>
+            <p class="film-logline">At the heart of this socially absurdist comedy—staged almost like a theatrical performance—are bold, beautiful women who introduce the men they meet to their distinctive way of life.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/15b8bc7b96-poster.jpg');">
+             <div class="film-category-badge">ANIMAZIONE</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Timosha</h3>
+            <div class="film-director">Elena Malenkina</div>
+            <p class="film-logline">In the happy and peaceful world of the hedgehog Timosha, trouble suddenly comes. His life will never be the same again, and he will have to leave his cozy home. Will Timosha be able to understand and accept this? This story is about those who have been forced to leave their homes and start a new life.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/e5b19c0457-poster.jpg');">
+             <div class="film-category-badge">ANIMAZIONE</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">DAGON</h3>
+            <div class="film-director">Paolo Gaudio</div>
+            <p class="film-logline">DAGON is a stop motion animation short film freely inspired by the story of the same name by cult author H.P. Lovecraft. In 1919 San Francisco, a man is standing on the ledge of a building ready to jump. Desperate, he relives in his memories the absurd and shocking episode that led him to the brink of suicide: the encounter with the monstrous and mythological Great Old One, DAGON.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/9e1daddf4b-poster.jpg');">
+             <div class="film-category-badge">ANIMAZIONE</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">In Half</h3>
+            <div class="film-director">Jorge Morais Valle</div>
+            <p class="film-logline">Through a child's imagination it tells the journey of a man who after falling prey to his fears, he must cross a strange world, a universe full of magic, where he will be confronted with his own fears and conflicts from the past and where he must find solutions for the future to discover his self-identity.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/94beb41972-poster.jpg');">
+             <div class="film-category-badge">ANIMAZIONE</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Avant de Rentrer...</h3>
+            <div class="film-director">Arthur Bonneau</div>
+            <p class="film-logline">Lost along the road, someone enters the forest...</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/18bbd90917-poster.jpg');">
+             <div class="film-category-badge">DOC CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">21st Century</h3>
+            <div class="film-director">Mustafa Mert Yagci</div>
+            <p class="film-logline">People born between 1997-2002 from 8 different countries and 4 different continents answer one simple question. People who have spent their entire conscious lives in the 21st century answers the question: 'What is the worst thing happen in 21st Century'</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/8f8ccd036d-poster.jpg');">
+             <div class="film-category-badge">DOC CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Moving Mountains</h3>
+            <div class="film-director">Andrea Costa</div>
+            <p class="film-logline">Moussa, a young man from Guinea, finds a home on the farm of Rita, a farmer in South Tyrol. Through daily routines, faith and challenges, the film explores the meaning of belonging and the need for family. Distant in origin but close in their desires, Moussa and Rita search together for a new balance.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/844c7a9a1c-poster.jpg');">
+             <div class="film-category-badge">DOC CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">A Little Fact</h3>
+            <div class="film-director">Polina Pribytkova, Maxim Pechersky</div>
+            <p class="film-logline">A jigsaw film assembled from Soviet archival footage from the 20s and 30s, preserving memories of the construction of a new and everyday life - the launch of the metro, hard work, cultural life and leisure. By combining two parallel stories - state film chronicles and diary entries - the film attempts to revise the historical archive and the usual perception of the time, bringing to the forefront the collective image of a hero from the crowd.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/4693738d5e-poster.jpg');">
+             <div class="film-category-badge">DOC CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Riccardo I</h3>
+            <div class="film-director">Federico Cozzio</div>
+            <p class="film-logline">Through archival footage, the film explores the relationship between a man, Vittorio, and his beloved boat, Riccardo I. Set against the backdrop of profound changes affecting the Adriatic Sea and its shores in the 20th century, it captures the end of ancient seafaring traditions. As a child, Vittorio serves as a cabin boy on his father's boat; in his old age, he feels a deep urge to preserve the world of his childhood. With unwavering determination, he embarks on a mission to restore Riccardo I, the last sailing ship of its kind, dedicating himself to the project until his final breath.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/91e932817f-poster.jpg');">
+             <div class="film-category-badge">DOC CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Piccola storia di un muro</h3>
+            <div class="film-director">Federico Braconi</div>
+            <p class="film-logline">“A Little Story of a Wall” investigates the impact of art upon people’s daily lives. Starting from the thoughts of the artist, Mr Daniele Geniale, the film goes through the events which led, under the scorching sun of a torrid Roman summer, to the accomplishment of the most extended mural in Rome (the “Città Eterna”).</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/2f149877bf-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Superbi</h3>
+            <div class="film-director">Nikola Brunelli</div>
+            <p class="film-logline">Ascoli Piceno is home to “SUPERBI,” a store that has been producing the city's most famous fried olives since 1864. Fulvio has been running the family business for years, yet recently he has grown tired of it (and the quality is not what it used to be, although he’d never admit it). But then a new fried olive store opens in town, run by young rival Ismail…</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/il volo della falena.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Il Vollo della Falena</h3>
+            <div class="film-director">Nikola Lorenzin</div>
+            <p class="film-logline">An engineer does not sleep for two nights, waiting for his partner to return home. Suspicion will lead him from the hills to the sea, from one dawn to another, in the darkness of a small city.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/bf3582df4e-poster.webp');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Padre</h3>
+            <div class="film-director">Michele Gallone</div>
+            <p class="film-logline">In the near future, emotions are for sale. It was a painful choice, but Francesco decided to sell his love for his daughter, Anna: he wouldn't have done it if the child's life weren't compromised by a terminal illness. The buyer is Mario, a man driven by an ambiguous spirit of sacrifice, at the highest price a father can feel.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/5b6ec886b1-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">UPDATE</h3>
+            <div class="film-director">Luca Violante</div>
+            <p class="film-logline">Anno 2039. I lavori del ventunesimo secolo non esistono più. UPDATE, un’IA rivoluzionaria, ha sostituito l’intera forza lavoro umana, restituendo alle persone il tempo che avevano sempre desiderato per fare ciò che volevano.  Eppure, per molti, quel tempo è vuoto. Senza più un ruolo nella società, le persone si sentono perse. Per risolvere questa dilagante crisi esistenziale, ADAPTiQ™, la società dietro UPDATE, lancia il Career Recovery Program: una promessa di reintegrazione per chi vuole tornare a lavorare, a sentirsi utile, e a ritrovare uno scopo.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/5164859c73-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">I Pinguini</h3>
+            <div class="film-director">Margherita Pezzella, Luca Candela</div>
+            <p class="film-logline">Three gangsters from Milan in sharp suits are waiting for dawn to finish a job. Between card games, wrong pizza orders, and the unexpected arrival of a nine-year-old niece, their mission becomes increasingly complicated. The Penguins is a grotesque noir comedy where nothing goes according to plan.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/logo%20mff%20arancione.png'); background-size: contain; background-repeat: no-repeat;">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Tomorrow is another day</h3>
+            <div class="film-director">Valentina Tomada</div>
+            <p class="film-logline">Aurora, 8 years old, lives in a violent enviroment. Thanks to her immagination, made by cowboys, she arrives to destroy her nightmares.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/9a570cfbd1-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">A DOMANI</h3>
+            <div class="film-director">Emanuele Vicorito</div>
+            <p class="film-logline">Arturo has been locked up in the Nisida juvenile detention center for two years. During community service on a beach, he cautiously decides to wander off. On the other side of the wall, Arturo meets Catrine, an intriguing tourist on vacation. In the girl’s eyes and between the pages of a book, Arturo will find his new beginning.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/logo%20mff%20arancione.png'); background-size: contain; background-repeat: no-repeat;">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">The Phone Call</h3>
+            <div class="film-director">Rolando Danesi</div>
+            <p class="film-logline">In an emergency telephone centre, Lorenzo receives a call from a man about to take his own life. Things will soon turn out to be different from what they seem, and Lorenzo will find himself forced to make a difficult choice.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/4275c9adfd-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Fortunata</h3>
+            <div class="film-director">Max Oliva Bartolozzi</div>
+            <p class="film-logline">Fortunata, Nomen omen, a name, a destiny.
+In a small provincial town, the hours marked by the few amusements, which often,
+too often turn into vices and sins that not even faith, the most
+rooted, can eradicate. Wandering souls like in a Dantesque circle move
+in this palace of horrors, where the rottenness is invisible, cleverly hidden
+among the masks worn by the characters who inhabit it or who
+stay there for a few hours.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/9c940936c6-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Bones, Alquemy and Ether!</h3>
+            <div class="film-director">Charbel Khoury</div>
+            <p class="film-logline">After a tragic event, Alex seeks meaning by cheating on his wife.
+Split between two worlds, something begins to grow inside him.
+In his mind? No. In his stomach.
+Redemption? Destruction? Butterflies or snakes.
+Both.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/85ebad5ee6-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">DISTRESS CALL</h3>
+            <div class="film-director">Michele D'anca</div>
+            <p class="film-logline">Two Italian operators are working for "Watch The Med Alarm Phone" receive an emergency phone call from the central Mediterranean Sea. For about eleven minutes the operators
+remain in contact with a man in danger and struggle to save the lives of one hundred migrants sinking on a rubber boat.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/b3b404cf0d-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">La Truffa</h3>
+            <div class="film-director">Michele Marchionne, Matteo Stipa</div>
+            <p class="film-logline">In una torrida giornata estiva, Mirella (80) riceve una telefonata da suo nipote Michele. È nei guai e ha bisogno di soldi. La nonna, in preda al panico, cerca di capire come aiutare il nipote. Peccato però che dall’altra parte della cornetta ci siano in realtà Frappa e Tommy, due sgangherati truffatori da quattro soldi che cercheranno in tutti i modi di ingannare la povera anziana.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/524973d942-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Exeunt</h3>
+            <div class="film-director">Franck Ernewein</div>
+            <p class="film-logline">A young woman finds herself lost in a mysteriously empty techno club, trying by all means to find a way out... and the others.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/8828497816-poster.webp');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">INSETTICIDA</h3>
+            <div class="film-director">Walter Piccolo</div>
+            <p class="film-logline">A frantic call with a pest control center reveals the existence of an out-of-the-ordinary infestation.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/c74554daf7-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Lento</h3>
+            <div class="film-director">Edoardo Sandulli</div>
+            <p class="film-logline">Assunta, a tenacious survivor of the devastating 1980 Irpinia earthquake, once dazzled audiences as a slow waltz regional champion dancer in Campania.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/5744d41a42-poster.webp');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">La Buona Condotta</h3>
+            <div class="film-director">Francesco Gheghi</div>
+            <p class="film-logline"></p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/87ae579b74-poster.jpg');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Alla Svizzera</h3>
+            <div class="film-director">Domenico Pizzulo</div>
+            <p class="film-logline">DOMENICO, tired of working as an undertaker in GERMANO’s funeral company, a lifelong friend along with FRANCESCO, decides it’s time to emigrate “to Switzerland,” as many have done before him.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/b7913ffef8-poster.webp');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">Hold On</h3>
+            <div class="film-director">David Barbieri</div>
+            <p class="film-logline">When Eugenio, an office worker exasperated by a Wi-Fi
+connection issue, contacts his phone company’s
+customer service, he finds himself trapped in a
+surreal odyssey of endless hold music and infinite
+transfers between departments, turning a simple
+request for assistance into a battle against the
+absurd.</p>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-poster" style="background-image: url('assets/locandine%202026/232a546202-poster.webp');">
+             <div class="film-category-badge">CORTI</div>
+          </div>
+          <div class="film-info">
+            <h3 class="film-title">L'Acquario</h3>
+            <div class="film-director">Gianluca Zonta</div>
+            <p class="film-logline">Vincenzo is on his first date with Sara, he asks for help from an application based on AI, which suggests what to say. A love story is born and they organize a blind date for their best friends, advising them both to use AI.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

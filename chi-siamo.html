@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Siamo - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .about-hero {
+      height: 60vh;
+      background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop');
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-top: 4rem;
+    }
+
+    .team-member {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s;
+      border-radius: 8px;
+    }
+
+    .team-member:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-5px);
+      background: rgba(192, 83, 44, 0.05);
+    }
+
+    .member-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      background-color: #111;
+      background-size: cover;
+      background-position: center;
+      border: 3px solid var(--accent-color);
+      box-shadow: 0 0 20px rgba(192, 83, 44, 0.3);
+    }
+
+    .role {
+      color: var(--accent-color);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .member-bio {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .mission-stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 4rem;
+      padding: 3rem;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 12px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .stat-label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .governance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .governance-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 0;
+      }
+    }
+
+    .governance-member {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      transition: all 0.3s;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .governance-member::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .governance-member:hover {
+      background: rgba(192, 83, 44, 0.03);
+      border-color: rgba(192, 83, 44, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .governance-member:hover::before {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="next.html">Next</a></li>
+      <li><a href="legends.html">Last Editions</a></li>
+      <li><a href="partner.html">Partner</a></li>
+      <li><a href="chi-siamo.html">Who We Are</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section class="hero-section about-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Chi Siamo</h1>
+      <p>L'equipaggio della missione Marte Film Festival.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="margin-bottom: 2rem;">La Nostra Visione</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+        Il Marte Film Festival nasce dal desiderio di creare uno spazio per le voci più audaci e innovative del panorama cinematografico indipendente. Crediamo che il cinema sia lo strumento più potente per esplorare nuovi mondi, sfidare le convenzioni e connettere le persone attraverso storie extraordinary.
+      </p>
+
+      <div class="mission-stats">
+        <div class="stat-item">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Edizioni</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">300+</div>
+          <div class="stat-label">Film Ricevuti</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Paesi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Spettatori</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-bg">
+    <div class="container">
+      <h2>Il Team</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary);">
+        Il direttivo che guida la missione spaziale del Marte Film Festival.
+      </p>
+
+      <div class="governance-grid">
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('assets/io\ giacca\ blu.png')"></div>
+          <h3>Guglielmo Brancato</h3>
+          <p class="role">Direttore Festival</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop')"></div>
+          <h3>Rossana Danile</h3>
+          <p class="role">Direttore Film Industry</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop')"></div>
+          <h3>Giuseppe Di Maio</h3>
+          <p class="role">Direttore Marketing</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1974&auto=format&fit=crop')"></div>
+          <h3>Miriam Zammataro</h3>
+          <p class="role">Direttrice Artistica</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop')"></div>
+          <h3>Vincenzo Loiacono</h3>
+          <p class="role">Direttore Amministrativo</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop')"></div>
+          <h3>Mishelkle Kovalova</h3>
+          <p class="role">Editor</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+
+        <div class="governance-member">
+          <div class="member-image" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop')"></div>
+          <h3>Carlotta Brancato</h3>
+          <p class="role">Programmer Toon Film</p>
+          <div class="socials" style="margin-top: 1.5rem;">
+            <a href="#" style="color: var(--accent-color); font-size: 0.8rem;">social / mail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

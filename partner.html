@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .partner-hero {
+      height: 100vh;
+      background-image: url('./assets/banner%20sito%20statue%20due.png');
+    }
+
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 3rem;
+      align-items: center;
+      margin-top: 4rem;
+    }
+
+    .partner-logo {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .partner-logo:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .partner-logo img {
+      max-width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .partner-logo:hover img {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="next.html">Next</a></li>
+      <li><a href="legends.html">Last Editions</a></li>
+      <li><a href="partner.html">Partner</a></li>
+      <li><a href="chi-siamo.html">Who We Are</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section class="hero-section partner-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>I Nostri Partner</h1>
+      <p>Enti e aziende che rendono possibile l'esplorazione.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="margin-bottom: 2rem;">Main Sponsor</h2>
+      <div class="partner-grid">
+        <div class="partner-logo">
+          <h3>Sponsor 1</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Sponsor 2</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Sponsor 3</h3>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 6rem; margin-bottom: 2rem;">Media Partner</h2>
+      <div class="partner-grid">
+        <div class="partner-logo">
+          <h3>Media 1</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Media 2</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

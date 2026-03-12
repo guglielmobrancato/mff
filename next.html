@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .next-hero {
+      height: 60vh;
+      background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');
+    }
+
+    .countdown-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .countdown-item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 8px;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .countdown-number {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="next.html">Next</a></li>
+      <li><a href="legends.html">Last Editions</a></li>
+      <li><a href="partner.html">Partner</a></li>
+      <li><a href="chi-siamo.html">Who We Are</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section class="hero-section next-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>MFF 2027</h1>
+      <p>La prossima missione è in preparazione.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="text-align: center;">
+      <h2 style="margin-bottom: 2rem;">Preparati al Lancio</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 3rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+        Le iscrizioni per la prossima edizione apriranno ufficialmente il <strong>30 Marzo 2027</strong>. 
+        Prepara la tua opera per il lancio.
+      </p>
+      <a href="https://filmfreeway.com/martefilmfestival1" target="_blank" rel="noopener" class="cta-button" style="background: var(--accent-color);">subscribe your film</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

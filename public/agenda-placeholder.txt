@@ -1,0 +1,5 @@
+Questo è un file placeholder.
+Sostituisci questo file con il PDF reale dell'agenda del festival.
+
+Il file deve essere chiamato: agenda.pdf
+E deve essere posizionato in: public/agenda.pdf
