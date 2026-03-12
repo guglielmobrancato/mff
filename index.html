@@ -11,6 +11,72 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <style>
+    .governance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .governance-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-bottom: 0;
+      }
+    }
+
+    .governance-member {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .governance-member::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .governance-member:hover {
+      background: rgba(192, 83, 44, 0.05);
+      border-color: rgba(192, 83, 44, 0.4);
+      transform: translateY(-5px);
+    }
+
+    .governance-member:hover::before {
+      opacity: 1;
+    }
+    
+    .member-image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 8px;
+      margin: 0 auto 1.5rem;
+      background-color: #111;
+      background-size: cover;
+      background-position: center;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .governance-member:hover .member-image {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 20px rgba(192, 83, 44, 0.3);
+    }
+  </style>
 </head>
 
 <body>
@@ -50,6 +116,10 @@
         <p>Studi Televisivi Voxson<br>
           Via di Tor Cervara 286<br>
           20 - 22 Marzo 2026</p>
+        <div style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 0.8rem;">
+          <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-color); font-weight: 600;">Main Technical Partner & Host</span>
+          <img src="assets/partner/VETRA%20ACADEMY%20bianco.png" alt="Vetra Academy" style="max-height: 70px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">
+        </div>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
           <a href="https://www.ticketsms.it/collection/Marte-Film-Festival-II-Edizione?_gl=1*1j6tlgc*_up*MQ..*_ga*OTUxNDk3MDgzLjE3NzMzNTMyNDM.*_ga_DHM87SVKDD*czE3NzMzNTMyNDIkbzEkZzEkdDE3NzMzNTMyNDYkajU2JGwwJGgxNjk3NTI5NDI4" target="_blank" rel="noopener" class="cta-button">acquista il tuo biglietto</a>
           <a href="./assets/Programma 2026.pdf" download="Programma_Marte_Film_Festival.pdf" class="cta-button cta-secondary">Scarica il Programma</a>
@@ -81,6 +151,67 @@
         <div style="flex: 1; min-width: 300px; text-align: center;">
           <div style="width: 100%; height: 400px; background: rgba(255,255,255,0.02) url('./assets/statua.png') no-repeat center center; background-size: contain; border: 1px solid rgba(192,83,44,0.3); border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
             <div style="position: absolute; width: 200px; height: 200px; background: var(--accent-glow); filter: blur(60px); border-radius: 50%; z-index: 0;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MERCHANDISING PROMO SECTION -->
+    <section class="section" style="background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.8)), url('assets/banner%20sito%20statue.png') center/cover; padding: 6rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+      <div class="container">
+        <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #fff; text-transform: uppercase; letter-spacing: 2px;">Indossa La Resistenza</h2>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 600px; margin: 0 auto 3rem;">
+          Scopri lo store ufficiale del Marte Film Festival. T-shirt in edizione limitata, tote bag e stampe fine art per supportare il cinema che non chiede scusa.
+        </p>
+        <a href="merchandising.html" class="cta-button" style="font-size: 1.1rem; padding: 1rem 3rem;">Esplora lo Store MFF</a>
+      </div>
+    </section>
+
+
+    <!-- GIURIA 2026 SECTION -->
+    <section class="section dark-bg" style="padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="container">
+        <h2 style="margin-bottom: 1rem;">La Giuria 2026</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary);">
+          I professionisti del settore che valuteranno i film in concorso per la nuova edizione.
+        </p>
+
+        <div class="governance-grid">
+          <!-- Carlo Giuliano (Presidente) -->
+          <div class="governance-member">
+            <div class="member-image" style="background-image: url('assets/giuria%2026/carlo%20giuliano.jpg'); aspect-ratio: 1/1; height: auto;"></div>
+            <h3>Carlo Giuliano</h3>
+            <p class="role" style="color: var(--accent-color); font-weight: bold;">Presidente di Giuria</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; line-height: 1.5;">Critico cinematografico e capo redattore di Ciak Club.</p>
+          </div>
+
+          <!-- Altri Giurati -->
+          <div class="governance-member">
+            <div class="member-image" style="background-image: url('assets/giuria%2026/Ezio%20Fratto.jpg'); aspect-ratio: 1/1; height: auto;"></div>
+            <h3>Ezio Fratto</h3>
+            <p class="role">Giurato</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; line-height: 1.5;">Divulgatore cinematografico e regista.</p>
+          </div>
+
+          <div class="governance-member">
+            <div class="member-image" style="background-image: url('assets/giuria%2026/FOTO%20ILEANA%20D\'AMBRA.jpg'); aspect-ratio: 1/1; height: auto;"></div>
+            <h3>Ileana D'Ambra</h3>
+            <p class="role">Giurata</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; line-height: 1.5;">Attrice.</p>
+          </div>
+
+          <div class="governance-member">
+            <div class="member-image" style="background-image: url('assets/giuria%2026/FOTO%20MARTINA%20BARONE.png'); aspect-ratio: 1/1; height: auto; background-position: top;"></div>
+            <h3>Martina Barone</h3>
+            <p class="role">Giurata</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; line-height: 1.5;">Critica cinematografica.</p>
+          </div>
+
+          <div class="governance-member">
+            <div class="member-image" style="background-image: url('assets/giuria%2026/sandro%20torella.jpg'); aspect-ratio: 1/1; height: auto;"></div>
+            <h3>Sandro Torella</h3>
+            <p class="role">Giurato</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem; line-height: 1.5;">Attore.</p>
           </div>
         </div>
       </div>
