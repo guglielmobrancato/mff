@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Industry - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .innesti-hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.95)), url('assets/banner%20sito%20statue%20due.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 6rem 2rem 2rem;
+    }
+    
+    .innesti-logo-large {
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 2rem;
+      filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+    }
+
+    .event-details-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--accent-color);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      margin: 3rem auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .event-details-card p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .event-details-card strong {
+      color: var(--accent-color);
+    }
+
+    .director-section {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      margin: 6rem 0;
+      flex-wrap: wrap;
+    }
+
+    .director-image-placeholder {
+      flex: 1;
+      min-width: 300px;
+      height: 400px;
+      background: #222;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text-secondary);
+    }
+
+    .director-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .screenplay-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .screenplay-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 2rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .screenplay-card:hover {
+      background: rgba(192, 83, 44, 0.05);
+      border-color: rgba(192, 83, 44, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .screenplay-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(192, 83, 44, 0.2);
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="next.html">Next</a></li>
+      <li><a href="legends.html">Last Editions</a></li>
+      <li><a href="partner.html">Partner</a></li>
+      <li><a href="chi-siamo.html">Who We Are</a></li>
+      <li><a href="film-industry.html">Film Industry</a></li>
+      <li><a href="vetra.html">Vetra</a></li>
+      <li><a href="merchandising.html">Merchandising</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- Hero Section Brandizzata Innesti -->
+  <header class="innesti-hero">
+    <img src="assets/partner/INNESTI%20PLUS%20BIANCO.png" alt="Innesti Film Industry" class="innesti-logo-large">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem; font-family: 'Outfit', sans-serif;">Film Industry Day</h1>
+    <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto; line-height: 1.6;">
+      Il punto d'incontro tra giovani autori indipendenti e produttori. Un'opportunità unica per dare vita a nuove visioni cinematografiche.
+    </p>
+
+    <div class="event-details-card">
+      <p><strong>Data:</strong> 22 Marzo 2026</p>
+      <p><strong>Orario:</strong> Dalle 15:00 alle 19:00</p>
+      <p><strong>Location:</strong> Studi Televisivi Voxson, Via di Tor Cervara 286, Roma</p>
+    </div>
+  </header>
+
+  <!-- Sezione Direttrice e Collaboratrice -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 6rem;">
+        <a href="#" class="cta-button" style="font-size: 1.2rem; padding: 1.2rem 3rem;">Partecipa alla Film Industry</a>
+      </div>
+
+      <div class="director-section" style="align-items: flex-start;">
+        
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 2rem;">
+          <div class="director-image-placeholder" style="aspect-ratio: 3/4; min-height: 400px; background-image: url('assets/chi%20siamo/rossana%20danile.jpg'); background-size: cover; background-position: top center; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); width: 100%;"></div>
+          <div class="director-content">
+            <h2 style="margin-bottom: 1rem; color: var(--accent-color);">Rossana Danile</h2>
+            <h3 style="margin-bottom: 2rem; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;">Direttrice Film Industry</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+              Sotto la guida di Rossana Danile, la Film Industry del Marte Film Festival diventa un ecosistema vitale per i creatori emergenti. La sua visione mira a colmare la distanza tra il talento indipendente e le realtà produttive, creando connessioni concrete e opportunità di sviluppo nel panorama cinematografico italiano e internazionale.
+            </p>
+          </div>
+        </div>
+
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 2rem;">
+          <div class="director-image-placeholder" style="aspect-ratio: 3/4; min-height: 400px; background-image: url('assets/chi%20siamo/kovalovas.jpg'); background-size: cover; background-position: top center; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); width: 100%;"></div>
+          <div class="director-content">
+            <h2 style="margin-bottom: 1rem; color: var(--accent-color);">Mishelle Kovalova</h2>
+            <h3 style="margin-bottom: 2rem; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;">Collaboratrice Film Industry</h3>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8;">
+              Mishelle Kovalova affianca la direzione nello sviluppo della Film Industry, portando la sua esperienza per facilitare il dialogo tra autori e produttori. Il suo contributo è fondamentale per l'organizzazione delle Pitch Session e per favorire l'incontro tra nuove idee e professionisti del settore.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- L'importanza delle sceneggiature -->
+  <section class="section dark-bg" style="text-align: center;">
+    <div class="container">
+      <h2 style="margin-bottom: 2rem;">L'Importanza della Sceneggiatura</h2>
+      <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 900px; margin: 0 auto; line-height: 1.8;">
+        Tutto inizia dalla parola. Crediamo che una solida sceneggiatura sia il cuore pulsante di ogni grande film. Per questo, Innesti dedica un'attenzione speciale agli autori, offrendo loro un palco per fare "pitching" delle proprie storie di fronte a una platea di produttori pronti ad investire in idee audaci e originali. Mettiamo al centro la narrazione, perché senza una grande storia, non c'è cinema.
+      </p>
+    </div>
+  </section>
+
+  <!-- Le 10 Sceneggiature Selezionate -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 1rem;">Le 10 Opere Selezionate</h2>
+      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">
+        Le storie che prenderanno parte alla Pitch Session ufficiale.
+      </p>
+
+      <div class="screenplay-grid">
+        <!-- Generiamo 10 card placeholder -->
+        <script>
+          for(let i=1; i<=10; i++) {
+            document.write(`
+              <div class="screenplay-card" style="position: relative;">
+                <span class="screenplay-number">${i}</span>
+                <h3 style="margin-bottom: 1rem; padding-right: 3rem;">Titolo dell'Opera</h3>
+                <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 1rem;">Autore: Nome Cognome</p>
+                <p style="color: var(--text-secondary); line-height: 1.5; font-size: 0.95rem;">
+                  Breve logline o sinossi dell'opera. In attesa dei testi definitivi per ciascuna sceneggiatura selezionata.
+                </p>
+              </div>
+            `);
+          }
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

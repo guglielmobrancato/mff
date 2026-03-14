@@ -4,21 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iscrizioni Chiuse - Marte Film Festival</title>
+  <title>Vetra - Marte Film Festival</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <style>
-    .closed-hero {
-      height: 100vh;
+    .coming-soon-section {
+      min-height: 80vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.95)), url('assets/banner%20sito%20statue%20due.png');
-      background-size: cover;
-      background-position: center;
+      padding: 0 2rem;
+    }
+    .coming-soon-title {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+      text-shadow: 0 0 20px var(--accent-glow);
+    }
+    .coming-soon-text {
+      font-size: 1.5rem;
+      color: var(--text-secondary);
+      max-width: 600px;
     }
   </style>
 </head>
@@ -37,6 +47,7 @@
       <li><a href="film-industry.html">Film Industry</a></li>
       <li><a href="vetra.html">Vetra</a></li>
       <li><a href="merchandising.html">Merchandising</a></li>
+      <li><a href="https://velvet.martestudios.com" target="_blank" rel="noopener">Blog</a></li>
     </ul>
     <div class="burger">
       <div class="line1"></div>
@@ -45,18 +56,18 @@
     </div>
   </nav>
 
-  <section class="closed-hero">
-    <div class="container" style="max-width: 800px;">
-      <h1 style="font-size: 4rem; color: var(--accent-color); margin-bottom: 2rem; font-weight: 900;">Iscrizioni Chiuse</h1>
-      <p style="font-size: 1.5rem; color: #fff; line-height: 1.6; margin-bottom: 3rem;">
-        Le iscrizioni per partecipare alla sessione di Pitching della Film Industry sono ufficialmente concluse.
-      </p>
-      <p style="color: var(--text-secondary); margin-bottom: 3rem;">
-        Grazie a tutti per l'incredibile numero di adesioni. Iscrivetevi alla newsletter o seguiteci sui social per scoprire la prossima finestra di candidatura e tutti gli aggiornamenti del festival.
-      </p>
-      <a href="partner.html" class="cta-button cta-secondary">Torna ai Partner</a>
-    </div>
+  <section class="section coming-soon-section">
+    <h1 class="coming-soon-title">Vetra Academy</h1>
+    <p class="coming-soon-text">
+      Il sito ufficiale sarà disponibile a breve. Resta sintonizzato.
+    </p>
   </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marte Studios. All Systems Nominal.</p>
+    </div>
+  </footer>
 
   <script type="module" src="./main.js"></script>
 </body>

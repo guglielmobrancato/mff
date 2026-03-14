@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materiale Promozionale - Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background-color: #050505;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .onboarding-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .onboarding-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(192, 83, 44, 0.2);
+      border-radius: 16px;
+      padding: 4rem 3rem;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo-badge {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      color: var(--accent-color);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .cta-button {
+      background: var(--accent-color);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 3rem;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 15px rgba(192, 83, 44, 0.4);
+    }
+
+    .cta-button:hover {
+      background: #a34320;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(192, 83, 44, 0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="onboarding-container">
+    <div class="onboarding-card">
+      <div class="logo-badge">MFF</div>
+      <h1>Benvenuto a bordo.</h1>
+      <p>
+        Questa è la tua area riservata per inviarci il materiale necessario alla promozione del tuo talk al Marte Film Festival. 
+        Ti chiediamo di compilare il modulo con attenzione, le informazioni fornite verranno utilizzate per presentarti al nostro pubblico nei migliori dei modi.
+      </p>
+      <a href="https://forms.gle/5mj7tHexAhNy8JoN6" target="_blank" rel="noopener" class="cta-button">
+        Compila il Modulo
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Marte Studios. All Systems Nominal.
+  </footer>
+
+</body>
+</html>
